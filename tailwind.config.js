@@ -7,6 +7,5 @@ export default {
   theme: {
     extend: {},
   },
-  base:"/drappointment/",
   plugins: [],
 }
