@@ -40,7 +40,9 @@ const Navbar = () => {
             src={whatsapp}
             alt="whatsapp logo"
           />
-          <p className='mt-2 font-bold'>Book Appointment</p>
+          <NavLink to="/book">
+            <p className='mt-2 font-bold'>Book Appointment</p>
+          </NavLink>
       </div>
     </div>
   )

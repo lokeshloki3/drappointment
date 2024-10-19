@@ -1,10 +1,12 @@
 import React from 'react';
 import { Route, Routes} from  'react-router-dom';
-import Blogs from './components/Blogs';
+import Blogs from './pages/Blogs';
 import Home from './pages/Home';
-import Contact from './components/Contact';
+import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import About from './pages/About';
+import Footer from './components/Footer';
+import BookAppointment from './pages/BookAppointment';
 
 const App = () => {
 
@@ -17,7 +19,9 @@ const App = () => {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/book" element={<BookAppointment />} />
         </Routes>
+        <Footer />
     </div>
   );
 };
