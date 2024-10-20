@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://lokeshloki3.github.io/drappointment",
+  "homepage": "https://lokeshloki3.github.io/drappointment",
   "name": "hospital-appointment",
   "private": true,
   "version": "0.0.0",
@@ -7,14 +7,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
     "react-router-dom": "^6.26.2"
   },
   "devDependencies": {

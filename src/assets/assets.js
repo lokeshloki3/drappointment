@@ -59,27 +59,43 @@ export const assets = {
 
 export const specialityData = [
   {
-    speciality: "General physician",
+    speciality: "Speech and Language Therapy",
     image: General_physician,
   },
   {
-    speciality: "Gynecologist",
+    speciality: "Voice Therapy",
     image: Gynecologist,
   },
   {
-    speciality: "Dermatologist",
+    speciality: "Swallowing Therapy",
     image: Dermatologist,
   },
   {
-    speciality: "Pediatricians",
+    speciality: "Auditory Verbal Therapy",
     image: Pediatricians,
   },
   {
-    speciality: "Neurologist",
+    speciality: "Cochlear Implant Services",
     image: Neurologist,
   },
   {
-    speciality: "Gastroenterologist",
+    speciality: "Audiology Consultation",
+    image: Gastroenterologist,
+  },
+  {
+    speciality: "Pure Tone Audiometry",
+    image: Dermatologist,
+  },
+  {
+    speciality: "Immittance Audiometry",
+    image: Pediatricians,
+  },
+  {
+    speciality: "ASSR, BERA, OAE",
+    image: Neurologist,
+  },
+  {
+    speciality: "Hearing Aid Services",
     image: Gastroenterologist,
   },
 ];
