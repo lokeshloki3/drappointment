@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'; // Importing icons
+import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 import Card from './Card';
 
 const Testimonials = (props) => {
@@ -19,34 +19,25 @@ const Testimonials = (props) => {
 
     return (
         <>
-            <h1 className='text-center text-4xl md:text-6xl my-8'>Testimonials</h1>
+            <h1 className='text-center text-4xl md:text-6xl my-2'>Testimonials</h1>
             <div className="w-full h-screen flex flex-col md:flex-row items-center justify-center relative bg-antiquewhite overflow-hidden">
-                {/* Left Blurred Testimonial */}
-                <div className="absolute left-5 md:left-40 ml-5 md:ml-28 transform -translate-x-full opacity-50 blur-sm pointer-events-none">
-                    <Card review={reviews[leftIndex]} />
-                </div>
-
                 {/* Left Arrow */}
                 <AiOutlineLeft
-                    className="cursor-pointer text-2xl md:text-3xl absolute left-5 md:left-40 text-gray-600 z-10"
+                    className="cursor-pointer text-2xl md:text-3xl absolute left-5 md:left-10 text-gray-600 z-10"
                     onClick={leftShiftHandler}
                 />
 
-                {/* Center Testimonial */}
-                <div className="z-20">
+                {/* Center Testimonial Cards */}
+                <div className="flex flex-col md:flex-row z-20 space-y-2 md:space-y-0 md:space-x-2">
+                    <Card review={reviews[leftIndex]} />
                     <Card review={reviews[index]} />
                 </div>
 
                 {/* Right Arrow */}
                 <AiOutlineRight
-                    className="cursor-pointer text-2xl md:text-3xl absolute right-5 md:right-40 text-gray-600 z-10"
+                    className="cursor-pointer text-2xl md:text-3xl absolute right-5 md:right-10 text-gray-600 z-10"
                     onClick={rightShiftHandler}
                 />
-
-                {/* Right Blurred Testimonial */}
-                <div className="absolute right-5 md:right-40 mr-5 md:mr-28 transform translate-x-full opacity-50 blur-sm pointer-events-none">
-                    <Card review={reviews[rightIndex]} />
-                </div>
             </div>
         </>
     );
