@@ -18,13 +18,13 @@ const Contact = () => {
         <div className="flex flex-col justify-center items-start gap-6">
           <p className="font-semibold text-lg text-gray-600">OUR OFFICE</p>
           <p className="text-gray-500">
-            00000 Willms Station <br />
-            Suite 000, Washington, USA,
+            GM-13, D.D. Nagar, <br />
+            Kushwah Market, Gwalior - 474020
           </p>
           <p className="text-gray-500">
-            Tel: (000) 000-0000 <br /> Email: prescripto@gmail.com
+            Tel: 9999999999 <br /> Email: cortihear@gmail.com
           </p>
-          <p className="font-semibold text-lg text-gray-600">
+          {/* <p className="font-semibold text-lg text-gray-600">
             CAREERS AT PRESCRIPTO
           </p>
           <p className="text-gray-500">
@@ -32,7 +32,7 @@ const Contact = () => {
           </p>
           <button className="border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500">
             Explore Jobs
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

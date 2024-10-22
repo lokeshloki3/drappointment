@@ -19,36 +19,44 @@ const Blogs = () => {
           <p
             className='w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer '
           >
-            General Physician
+            All Blogs
           </p>
           <p
             className='w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer'
           >
-            Gynecologist
+            Aphasia
           </p>
           <p
             className='w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer'
           >
-            Dermatologist
+            Autism
           </p>
           <p
             className='w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer'
           >
-            Pediatricians
+            Case Study
           </p>
           <p
             className='w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer'
           >
-            Neurologist
+            Occupational Therapy
           </p>
           <p
             className='w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer'          >
-            Gastroenterologist
+            Speech Delay
+          </p>
+          <p
+            className='w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer'          >
+            Speech Therapy
+          </p>
+          <p
+            className='w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer'          >
+            Success Stories
           </p>
         </div>
-        <div className="w-full grid grid-cols-auto gap-4 gap-y-6">
+        {/* <div className="w-full grid grid-cols-auto gap-4 gap-y-6">
               Hello
-        </div>
+        </div> */}
       </div>
     </div>
   );
