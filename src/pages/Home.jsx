@@ -6,6 +6,7 @@ import reviews from "../assets/data";
 const Home = () => {
   return (
     <div>
+      <h1 className="text-center m-8 text-6xl">Welcome to Cortihear</h1>
       <Header />
       <SpecialityMenu />
       <Testimonials reviews={reviews}/>

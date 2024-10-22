@@ -3,6 +3,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import whatsapp from '../assets/WhatsApp.png';
 import { assets } from "../assets/assets";
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -39,9 +40,10 @@ const Navbar = () => {
       </ul>
 
       <div className='flex text-center'>
-        <img className="mr-3" src={whatsapp} alt="whatsapp logo" />
+        {/* <img className="mr-3" src={whatsapp} alt="whatsapp logo" /> */}
+        <FaWhatsapp target="_blank" rel="noopener noreferrer" className="mr-3 text-green-600 text-2xl" />
         <NavLink to="/book">
-          <p className='mt-2 font-bold'>Book Appointment</p>
+          <p className='font-bold'>Book Appointment</p>
         </NavLink>
       </div>
 
