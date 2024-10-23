@@ -1,62 +1,19 @@
-import { useContext, useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
-// import { AppContext } from "../context/AppContext";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { categories } from '../assets/blogsData';
 
 const Blogs = () => {
-
   return (
-    <div>
-      <p className="text-gray-600">Browse through Blogs</p>
-      <div className="flex flex-col sm:flex-row items-start gap-5 mt-5">
-        <button
-          className='py-3 px-3 border rounded text-sm transition-all sm:hidden'
-        >
-          Filters
-        </button>
-        <div
-          className='flex-col gap-4 text-sm text-gray-600'
-        >
-          <p
-            className='w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer '
-          >
-            All Blogs
-          </p>
-          <p
-            className='w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer'
-          >
-            Aphasia
-          </p>
-          <p
-            className='w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer'
-          >
-            Autism
-          </p>
-          <p
-            className='w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer'
-          >
-            Case Study
-          </p>
-          <p
-            className='w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer'
-          >
-            Occupational Therapy
-          </p>
-          <p
-            className='w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer'          >
-            Speech Delay
-          </p>
-          <p
-            className='w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer'          >
-            Speech Therapy
-          </p>
-          <p
-            className='w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer'          >
-            Success Stories
-          </p>
-        </div>
-        {/* <div className="w-full grid grid-cols-auto gap-4 gap-y-6">
-              Hello
-        </div> */}
+    <div className="container mx-auto p-6">
+      <h1 className="text-3xl font-bold mb-6 text-center">Blogs</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        {Object.entries(categories).map(([categoryId, category]) => (
+          <Link to={`/${categoryId}`} key={categoryId}>
+            <div className="bg-white rounded-lg shadow-md p-4 text-center">
+              <h3 className="text-xl font-semibold">{category.title}</h3>
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
   );
