@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.jpg';
-import whatsapp from '../assets/WhatsApp.png';
 import { assets } from "../assets/assets";
 import { FaWhatsapp } from 'react-icons/fa';
 
@@ -10,13 +9,13 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className=" flex items-center justify-between text-sm py-4 mb-5 border-b-gray-400 border-b">
+    <div className="fixed top-0 left-2 md:left-32 right-2 md:right-32 z-10 flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400 bg-white">
 
       {/* Logo */}
       <img 
         src={logo}
         onClick={() => navigate("/")}
-        className='w-28 cursor-pointer'
+        className='w-32 cursor-pointer'
         alt='logo'
       />
 
@@ -40,10 +39,10 @@ const Navbar = () => {
       </ul>
 
       <div className='flex text-center'>
-        {/* <img className="mr-3" src={whatsapp} alt="whatsapp logo" /> */}
         <FaWhatsapp target="_blank" rel="noopener noreferrer" className="mr-3 text-green-600 text-2xl" />
         <NavLink to="/book">
-          <p className='font-bold'>Book Appointment</p>
+          <p className='font-bold cursor-pointer'>Book Appointment</p>
+          <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
         </NavLink>
       </div>
 
@@ -72,16 +71,16 @@ const Navbar = () => {
           </div>
           <ul className="flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium">
             <NavLink onClick={() => setShowMenu(false)} to="/">
-              <p className="px-4 py-2 rounded inline-block ">HOME</p>
+              <p className="px-4 py-2 rounded inline-block">HOME</p>
             </NavLink>
             <NavLink onClick={() => setShowMenu(false)} to="/blogs">
-              <p className="px-4 py-2 rounded inline-block ">BLOGS</p>
+              <p className="px-4 py-2 rounded inline-block">BLOGS</p>
             </NavLink>
             <NavLink onClick={() => setShowMenu(false)} to="/about-us">
-              <p className="px-4 py-2 rounded inline-block ">ABOUT</p>
+              <p className="px-4 py-2 rounded inline-block">ABOUT</p>
             </NavLink>
             <NavLink onClick={() => setShowMenu(false)} to="/contact">
-              <p className="px-4 py-2 rounded inline-block ">CONTACT</p>
+              <p className="px-4 py-2 rounded inline-block">CONTACT</p>
             </NavLink>
           </ul>
         </div>
