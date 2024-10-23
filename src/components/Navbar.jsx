@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.jpg';
 import whatsapp from '../assets/WhatsApp.png';
 import { assets } from "../assets/assets";
 import { FaWhatsapp } from 'react-icons/fa';
@@ -10,13 +10,13 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="flex items-center justify-between text-sm py-4 mb-5 border-b-gray-400 border-b">
+    <div className=" flex items-center justify-between text-sm py-4 mb-5 border-b-gray-400 border-b">
 
       {/* Logo */}
       <img 
         src={logo}
         onClick={() => navigate("/")}
-        className='w-44 cursor-pointer'
+        className='w-28 cursor-pointer'
         alt='logo'
       />
 
