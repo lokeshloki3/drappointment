@@ -63,44 +63,45 @@ export const assets = {
 
 export const specialityData = [
   {
-    speciality: "Speech and Language Therapy",
-    image: SpeechandLanguageTherapy,
-  },
-  {
     speciality: "Voice Therapy",
     image: VoiceTherapy,
-  },
-  {
-    speciality: "Swallowing Therapy",
-    image: SwallowingTherapy,
   },
   {
     speciality: "Auditory Verbal Therapy",
     image: AuditoryVerbalTherapy,
   },
   {
-    speciality: "Cochlear Implant Services",
-    image: CochlearImplantServices,
-  },
-  {
     speciality: "Audiology Consultation",
     image: AudiologyConsultation,
-  },
-  {
-    speciality: "Pure Tone Audiometry",
-    image: PureToneAudiometry,
   },
   {
     speciality: "Immittance Audiometry",
     image: ImmittanceAudiometry,
   },
   {
+    speciality: "Hearing Aid Services",
+    image: HearingAidServices,
+  },
+  {
     speciality: "ASSR, BERA, OAE",
     image: BERA,
   },
   {
-    speciality: "Hearing Aid Services",
-    image: HearingAidServices,
+    speciality: "Pure Tone Audiometry",
+    image: PureToneAudiometry,
+  },
+  {
+    speciality: "Speech and Language Therapy",
+    image: SpeechandLanguageTherapy,
+  },
+  
+  {
+    speciality: "Cochlear Implant Services",
+    image: CochlearImplantServices,
+  },
+  {
+    speciality: "Swallowing Therapy",
+    image: SwallowingTherapy,
   },
 ];
 
