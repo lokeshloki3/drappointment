@@ -42,7 +42,6 @@ const Navbar = () => {
         <FaWhatsapp target="_blank" rel="noopener noreferrer" className="mr-3 text-green-600 text-2xl" />
         <NavLink to="/book">
           <p className='font-bold cursor-pointer'>Book Appointment</p>
-          <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
         </NavLink>
       </div>
 

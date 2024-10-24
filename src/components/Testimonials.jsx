@@ -7,11 +7,11 @@ const Testimonials = (props) => {
     const [index, setIndex] = useState(0);
 
     const rightShiftHandler = () => {
-        setIndex((index + 1) % reviews.length);
+        setIndex((index + 2) % reviews.length);
     };
 
     const leftShiftHandler = () => {
-        setIndex((index - 1 + reviews.length) % reviews.length);
+        setIndex((index - 2 + reviews.length) % reviews.length);
     };
 
     const leftIndex = (index - 1 + reviews.length) % reviews.length;
