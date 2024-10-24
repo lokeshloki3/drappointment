@@ -83,12 +83,12 @@ export const specialityData = [
     image: CochlearImplantServices,
   },
   {
-    speciality: "Immittance Audiometry",
-    image: ImmittanceAudiometry,
-  },
-  {
     speciality: "ASSR, BERA, OAE",
     image: BERA,
+  },
+  {
+    speciality: "Immittance Audiometry",
+    image: ImmittanceAudiometry,
   },
   {
     speciality: "Pure Tone Audiometry",
