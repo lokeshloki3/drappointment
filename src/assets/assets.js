@@ -32,7 +32,7 @@ import doc14 from "./doc14.png";
 import doc15 from "./doc15.png";
 import SpeechandLanguageTherapy from "./SpeechandLanguageTherapy.png";
 import VoiceTherapy from "./VoiceTherapy.png";
-import SwallowingTherapy from "./SwallowingTherapy.png";
+import SwallowingTherapy from "./SwallowingTherapy.svg";
 import AuditoryVerbalTherapy from "./AuditoryVerbalTherapy.png";
 import CochlearImplantServices from "./CochlearImplantServices.png";
 import AudiologyConsultation from "./AudiologyConsultation.png";
@@ -67,20 +67,24 @@ export const specialityData = [
     image: VoiceTherapy,
   },
   {
-    speciality: "Auditory Verbal Therapy",
-    image: AuditoryVerbalTherapy,
+    speciality: "Speech and Language Therapy",
+    image: SpeechandLanguageTherapy,
+  },
+  {
+    speciality: "Swallowing Therapy",
+    image: SwallowingTherapy,
   },
   {
     speciality: "Audiology Consultation",
     image: AudiologyConsultation,
   },
   {
-    speciality: "Immittance Audiometry",
-    image: ImmittanceAudiometry,
+    speciality: "Cochlear Implant Services",
+    image: CochlearImplantServices,
   },
   {
-    speciality: "Hearing Aid Services",
-    image: HearingAidServices,
+    speciality: "Immittance Audiometry",
+    image: ImmittanceAudiometry,
   },
   {
     speciality: "ASSR, BERA, OAE",
@@ -91,17 +95,12 @@ export const specialityData = [
     image: PureToneAudiometry,
   },
   {
-    speciality: "Speech and Language Therapy",
-    image: SpeechandLanguageTherapy,
-  },
-  
-  {
-    speciality: "Cochlear Implant Services",
-    image: CochlearImplantServices,
+    speciality: "Auditory Verbal Therapy",
+    image: AuditoryVerbalTherapy,
   },
   {
-    speciality: "Swallowing Therapy",
-    image: SwallowingTherapy,
+    speciality: "Hearing Aid Services",
+    image: HearingAidServices,
   },
 ];
 
