@@ -30,12 +30,16 @@ import doc12 from "./doc12.png";
 import doc13 from "./doc13.png";
 import doc14 from "./doc14.png";
 import doc15 from "./doc15.png";
-import Dermatologist from "./Dermatologist.svg";
-import Gastroenterologist from "./Gastroenterologist.svg";
-import General_physician from "./General_physician.svg";
-import Gynecologist from "./Gynecologist.svg";
-import Neurologist from "./Neurologist.svg";
-import Pediatricians from "./Pediatricians.svg";
+import SpeechandLanguageTherapy from "./SpeechandLanguageTherapy.png";
+import VoiceTherapy from "./VoiceTherapy.png";
+import SwallowingTherapy from "./SwallowingTherapy.png";
+import AuditoryVerbalTherapy from "./AuditoryVerbalTherapy.png";
+import CochlearImplantServices from "./CochlearImplantServices.png";
+import AudiologyConsultation from "./AudiologyConsultation.png";
+import PureToneAudiometry from "./PureToneAudiometry.png";
+import ImmittanceAudiometry from "./ImmittanceAudiometry.png";
+import BERA from "./BERA.png";
+import HearingAidServices from "./HearingAidServices.png";
 
 export const assets = {
   appointment_img,
@@ -60,43 +64,43 @@ export const assets = {
 export const specialityData = [
   {
     speciality: "Speech and Language Therapy",
-    image: General_physician,
+    image: SpeechandLanguageTherapy,
   },
   {
     speciality: "Voice Therapy",
-    image: Gynecologist,
+    image: VoiceTherapy,
   },
   {
     speciality: "Swallowing Therapy",
-    image: Dermatologist,
+    image: SwallowingTherapy,
   },
   {
     speciality: "Auditory Verbal Therapy",
-    image: Pediatricians,
+    image: AuditoryVerbalTherapy,
   },
   {
     speciality: "Cochlear Implant Services",
-    image: Neurologist,
+    image: CochlearImplantServices,
   },
   {
     speciality: "Audiology Consultation",
-    image: Gastroenterologist,
+    image: AudiologyConsultation,
   },
   {
     speciality: "Pure Tone Audiometry",
-    image: Dermatologist,
+    image: PureToneAudiometry,
   },
   {
     speciality: "Immittance Audiometry",
-    image: Pediatricians,
+    image: ImmittanceAudiometry,
   },
   {
     speciality: "ASSR, BERA, OAE",
-    image: Neurologist,
+    image: BERA,
   },
   {
     speciality: "Hearing Aid Services",
-    image: Gastroenterologist,
+    image: HearingAidServices,
   },
 ];
 
