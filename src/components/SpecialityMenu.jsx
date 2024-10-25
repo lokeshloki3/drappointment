@@ -21,7 +21,7 @@ const SpecialityMenu = () => {
             key={index}
           >
             <img className="w-16 sm:w-24 mb-2 border rounded-full" src={item.image} alt="" />
-            <p className="text-xs sm:text-sm">{item.speciality}</p>
+            <p className="text-center text-xs sm:text-sm">{item.speciality}</p>
           </p>
         ))}
       </div>
