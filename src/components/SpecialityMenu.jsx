@@ -2,7 +2,6 @@ import { specialityData } from "../assets/assets";
 import { Link, useNavigate } from "react-router-dom";
 
 const SpecialityMenu = () => {
-
   const navigate = useNavigate();
 
   return (
@@ -10,8 +9,8 @@ const SpecialityMenu = () => {
       className="flex flex-col items-center gap-4 py-16 text-gray-800"
       id="speciality"
     >
-      <h1 className="text-3xl font-medium ">Our Specialities</h1>
-      <p className="sm:w-1/3 text-center text-sm">
+      <h1 className="text-3xl font-medium">Our Specialities</h1>
+      <p className="sm:w-1/3 text-center text-sm sm:text-lg">
         Click to book your appointment.
       </p>
       <div className="flex flex-wrap sm:justify-center gap-4 pt-5 w-full">
@@ -21,8 +20,8 @@ const SpecialityMenu = () => {
             className="flex flex-col items-center text-xs cursor-pointer flex-shrink-0 hover:translate-y-[-10px] transition-all duration-500 w-[calc(20%-16px)]"
             key={index}
           >
-            <img className="w-16 sm:w-24 mb-2 border rounded-full " src={item.image} alt="" />
-            <p>{item.speciality}</p>
+            <img className="w-16 sm:w-24 mb-2 border rounded-full" src={item.image} alt="" />
+            <p className="text-xs sm:text-sm">{item.speciality}</p>
           </p>
         ))}
       </div>

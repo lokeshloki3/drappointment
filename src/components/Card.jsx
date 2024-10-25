@@ -12,7 +12,7 @@ const Card = (props) => {
                 {/* <p className="text-gray-500 text-xs">{review.job}</p> */}
             </div>
 
-            <p className="text-gray-700 text-xs sm:text-sm mt-2 px-1">{review.text}</p>
+            <p className="text-gray-800 text-xs sm:text-base mt-2 px-1">{review.text}</p>
         </div>
     );
 };
