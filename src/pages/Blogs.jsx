@@ -9,7 +9,7 @@ const Blogs = () => {
       <p className="text-gray-600 text-center">Browse through our blog categories</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-5">
         {Object.entries(categories).map(([categoryId, category]) => (
-          <Link to={`/${categoryId}`} key={categoryId} className="block">
+          <Link to={`/blogs/${categoryId}`} key={categoryId} className="block">
             <div className="border border-blue-200 rounded-xl overflow-hidden cursor-pointer transition-all duration-200 hover:shadow-lg hover:translate-y-[-5px] h-full">
               <div className="bg-white p-4 text-center h-full flex flex-col justify-between">
                 <div>

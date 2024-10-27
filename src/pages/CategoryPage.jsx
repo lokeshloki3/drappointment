@@ -35,7 +35,7 @@ const CategoryPage = () => {
             <p className="text-gray-700 mb-4 text-left">{item.summary}</p>
             <button
               className="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition"
-              onClick={() => navigate(`/${categoryId}/${item.id}`)}
+              onClick={() => navigate(`/blogs/${categoryId}/${item.id}`)}
             >
               Read More
             </button>
