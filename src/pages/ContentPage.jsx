@@ -7,15 +7,15 @@ const ContentPage = () => {
   const navigate = useNavigate();
 
   const category = categories[categoryId];
-  
+
   if (!category) {
-    return <div>Category not found</div>;
+    return <div className="container mx-auto p-6 mt-24">Category not found</div>;
   }
 
   const selectedContent = category.items.find(item => item.id === parseInt(contentId));
 
   if (!selectedContent) {
-    return <div>Content not found</div>;
+    return <div className="container mx-auto p-6 mt-24">Content not found</div>;
   }
 
   return (
@@ -31,8 +31,10 @@ const ContentPage = () => {
         </button>
       </div>
 
-      <img className="rounded-lg mb-4" src={selectedContent.image} alt={selectedContent.title} />
-      <p className="text-gray-700 mb-4 text-left">{selectedContent.fullCaseStudy}</p>
+      <div className="border border-blue-200 rounded-xl overflow-hidden p-4 mb-8 shadow-md">
+        <img className="rounded-lg mb-4" src={selectedContent.image} alt={selectedContent.title} />
+        <p className="text-gray-700 mb-4 text-left">{selectedContent.fullCaseStudy}</p>
+      </div>
     </div>
   );
 };
