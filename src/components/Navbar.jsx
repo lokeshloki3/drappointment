@@ -3,10 +3,13 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.jpg';
 import { assets } from "../assets/assets";
 import { FaWhatsapp } from 'react-icons/fa';
+import AppointmentModal from './AppointmentModal';
+
 
 const Navbar = () => {
   const navigate = useNavigate();
   const [showMenu, setShowMenu] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className="fixed top-0 left-2 md:left-16 lg:left-32 right-2 md:right-16 lg:right-32 z-10 flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400 bg-white">
@@ -40,11 +43,11 @@ const Navbar = () => {
 
       <div className='flex text-center'>
         <FaWhatsapp target="_blank" rel="noopener noreferrer" className="mr-3 text-green-600 text-2xl" />
-        <NavLink to="/book">
-          <span className='font-bold cursor-pointer'>Book Appointment</span>
-          <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
-        </NavLink>
+        <span className='font-bold cursor-pointer' onClick={() => setIsModalOpen(true)}>Book Appointment</span>
       </div>
+
+      {/* Modal for booking appointment */}
+      <AppointmentModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
       <div className="flex items-center gap-4">
         <img

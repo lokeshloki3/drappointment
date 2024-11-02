@@ -1,4 +1,6 @@
-import { assets } from "../assets/assets";
+import React from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
+import { assets } from "../assets/assets"; // Ensure you have the correct image path
 
 const Contact = () => {
   return (
@@ -22,11 +24,19 @@ const Contact = () => {
             Kushwah Market, Gwalior - 474020
           </p>
           <p className="text-gray-500">
-            Tel: 9999999999 <br /> Email: cortihear@gmail.com
+            Tel: <a href="tel:+919999999999" className="text-blue-600 hover:text-blue-500 hover:underline">+91 99999 99999</a><br />
+            Email: <a href="mailto:cortihear@gmail.com" className="text-blue-600 hover:text-blue-500 hover:underline">cortihear@gmail.com</a>
           </p>
-          {/* <p className="font-semibold text-lg text-gray-600">
-            CAREERS AT PRESCRIPTO
-          </p>
+
+          <div className="flex justify-center">
+            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-500 transition duration-200">
+              <FaWhatsapp className="text-xl mr-2" />
+              <span className="font-semibold">WhatsApp Us</span>
+            </a>
+          </div>
+
+          {/* Uncomment if you want to include careers section */}
+          {/* <p className="font-semibold text-lg text-gray-600">CAREERS AT PRESCRIPTO</p>
           <p className="text-gray-500">
             Learn more about our teams and job openings.
           </p>
