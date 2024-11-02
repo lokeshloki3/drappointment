@@ -15,10 +15,35 @@ const AppointmentModal = ({ isOpen, onClose }) => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form Data Submitted:', formData);
-    onClose(); // Close the modal after submission
+    const scriptURL = import.meta.env.VITE_API_URL;
+
+    if (!scriptURL) {
+      alert("API URL is not defined. Please check your .env file.");
+      return;
+    }
+
+    try {
+      const response = await fetch(scriptURL, {
+        method: 'POST',
+        body: JSON.stringify(formData),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (response.ok) {
+        alert("Thanks for contacting us! We will contact you soon...");
+        onClose(); // Close the modal after submission
+        handleReset(); // Reset the form data
+      } else {
+        alert("There was a problem with your submission.");
+      }
+    } catch (error) {
+      console.error('Error!', error.message);
+      alert("There was an error. Please try again.");
+    }
   };
 
   const handleReset = () => {
