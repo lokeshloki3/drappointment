@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 
 const AppointmentModal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
-    name: '',
-    age: '',
-    gender: '',
-    problem: '',
-    mobile: '',
-    email: '',
+    Name: '',
+    Age: '',
+    Gender: '',
+    Problem: '',
+    Mobile: '',
+    Email: '',
   });
 
   const handleChange = (e) => {
@@ -24,14 +24,21 @@ const AppointmentModal = ({ isOpen, onClose }) => {
       return;
     }
 
+    const formDatab = new FormData();
+    Object.entries(formData).forEach(([key, value]) => {
+      formDatab.append(key, value);
+    });
+
     try {
+      console.log("Form Data:", formData); // Log form data
       const response = await fetch(scriptURL, {
         method: 'POST',
-        body: JSON.stringify(formData),
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        body: formDatab, // Use FormData to match what doPost expects
       });
+
+      console.log("Response Status:", response.status); // Log response status
+      const responseData = await response.json(); // Get response JSON
+      console.log("Response Data:", responseData); // Log response data
 
       if (response.ok) {
         alert("Thanks for contacting us! We will contact you soon...");
@@ -48,12 +55,12 @@ const AppointmentModal = ({ isOpen, onClose }) => {
 
   const handleReset = () => {
     setFormData({
-      name: '',
-      age: '',
-      gender: '',
-      problem: '',
-      mobile: '',
-      email: '',
+      Name: '',
+      Age: '',
+      Gender: '',
+      Problem: '',
+      Mobile: '',
+      Email: '',
     });
   };
 
@@ -68,8 +75,8 @@ const AppointmentModal = ({ isOpen, onClose }) => {
             <label className="block mb-2 text-gray-600">Name</label>
             <input
               type="text"
-              name="name"
-              value={formData.name}
+              name="Name"
+              value={formData.Name}
               onChange={handleChange}
               required
               className="border border-gray-300 p-2 w-full rounded"
@@ -79,8 +86,8 @@ const AppointmentModal = ({ isOpen, onClose }) => {
             <label className="block mb-2 text-gray-600">Age</label>
             <input
               type="number"
-              name="age"
-              value={formData.age}
+              name="Age"
+              value={formData.Age}
               onChange={handleChange}
               required
               className="border border-gray-300 p-2 w-full rounded"
@@ -89,8 +96,8 @@ const AppointmentModal = ({ isOpen, onClose }) => {
           <div className="mb-4">
             <label className="block mb-2 text-gray-600">Gender</label>
             <select
-              name="gender"
-              value={formData.gender}
+              name="Gender"
+              value={formData.Gender}
               onChange={handleChange}
               required
               className="border border-gray-300 p-2 w-full rounded"
@@ -104,8 +111,8 @@ const AppointmentModal = ({ isOpen, onClose }) => {
           <div className="mb-4">
             <label className="block mb-2 text-gray-600">Problem</label>
             <select
-              name="problem"
-              value={formData.problem}
+              name="Problem"
+              value={formData.Problem}
               onChange={handleChange}
               required
               className="border border-gray-300 p-2 w-full rounded"
@@ -120,8 +127,8 @@ const AppointmentModal = ({ isOpen, onClose }) => {
             <label className="block mb-2 text-gray-600">Mobile Number</label>
             <input
               type="tel"
-              name="mobile"
-              value={formData.mobile}
+              name="Mobile"
+              value={formData.Mobile}
               onChange={handleChange}
               required
               className="border border-gray-300 p-2 w-full rounded"
@@ -131,8 +138,8 @@ const AppointmentModal = ({ isOpen, onClose }) => {
             <label className="block mb-2 text-gray-600">Email Address</label>
             <input
               type="email"
-              name="email"
-              value={formData.email}
+              name="Email"
+              value={formData.Email}
               onChange={handleChange}
               required
               className="border border-gray-300 p-2 w-full rounded"
