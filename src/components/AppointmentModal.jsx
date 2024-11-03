@@ -24,7 +24,12 @@ const AppointmentModal = ({ isOpen, onClose }) => {
       return;
     }
 
-
+    // Validate mobile number
+    const mobileRegex = /^[0-9]{10}$/; // Regex to check for exactly 10 digits
+    if (!mobileRegex.test(formData.Mobile)) {
+      alert("Please enter a valid mobile number (10 digits).");
+      return;
+    }
 
     const formDatab = new FormData();
     Object.entries(formData).forEach(([key, value]) => {
