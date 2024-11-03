@@ -22,7 +22,7 @@ const App = () => {
         <Route path="/blogs/:categoryId/:contentId" element={<ContentPage />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />
     </div>
