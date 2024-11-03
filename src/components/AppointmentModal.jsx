@@ -36,9 +36,9 @@ const AppointmentModal = ({ isOpen, onClose }) => {
         body: formDatab, // Use FormData to match what doPost expects
       });
 
-      console.log("Response Status:", response.status); // Log response status
-      const responseData = await response.json(); // Get response JSON
-      console.log("Response Data:", responseData); // Log response data
+      // console.log("Response Status:", response.status); // Log response status
+      // const responseData = await response.json(); // Get response JSON
+      // console.log("Response Data:", responseData); // Log response data
 
       if (response.ok) {
         alert("Thanks for contacting us! We will contact you soon...");
