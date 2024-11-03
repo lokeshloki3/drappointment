@@ -24,6 +24,13 @@ const AppointmentModal = ({ isOpen, onClose }) => {
       return;
     }
 
+    // Validate mobile number
+    const mobileRegex = /^[0-9]{10}$/; // Regex to check for exactly 10 digits
+    if (!mobileRegex.test(formData.Mobile)) {
+      alert("Please enter a valid mobile number (10 digits).");
+      return;
+    }
+
     const formDatab = new FormData();
     Object.entries(formData).forEach(([key, value]) => {
       formDatab.append(key, value);
@@ -35,10 +42,6 @@ const AppointmentModal = ({ isOpen, onClose }) => {
         method: 'POST',
         body: formDatab, // Use FormData to match what doPost expects
       });
-
-      // console.log("Response Status:", response.status); // Log response status
-      // const responseData = await response.json(); // Get response JSON
-      // console.log("Response Data:", responseData); // Log response data
 
       if (response.ok) {
         alert("Thanks for contacting us! We will contact you soon...");
@@ -103,9 +106,9 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               className="border border-gray-300 p-2 w-full rounded"
             >
               <option value="">Select Gender</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
             </select>
           </div>
           <div className="mb-4">
@@ -118,8 +121,8 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               className="border border-gray-300 p-2 w-full rounded"
             >
               <option value="">Select Problem</option>
-              <option value="hearing">Hearing</option>
-              <option value="speech">Speech</option>
+              <option value="Hearing">Hearing</option>
+              <option value="Speech">Speech</option>
               {/* Add more problems as needed */}
             </select>
           </div>
@@ -131,6 +134,7 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               value={formData.Mobile}
               onChange={handleChange}
               required
+              inputMode="numeric" // Suggests a numeric keyboard on mobile devices
               className="border border-gray-300 p-2 w-full rounded"
             />
           </div>
