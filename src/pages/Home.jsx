@@ -1,7 +1,7 @@
 import Testimonials from "../components/Testimonials";
 import Header from "../components/Header";
 import SpecialityMenu from "../components/SpecialityMenu";
-import reviews from "../assets/data";
+import reviews from "../assets/testimonialsData";
 
 const Home = () => {
   return (
