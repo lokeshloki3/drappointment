@@ -42,7 +42,15 @@ const Navbar = () => {
       </ul>
 
       <div className='flex text-center'>
-        <FaWhatsapp target="_blank" rel="noopener noreferrer" className="mr-3 text-green-600 text-2xl" />
+        {/* WhatsApp Link */}
+        <a 
+          href="https://wa.me/918103712273" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="flex items-center text-green-600 hover:text-green-500 transition duration-200"
+        >
+          <FaWhatsapp className="text-2xl mr-3" />
+        </a>
         <span className='font-bold cursor-pointer' onClick={() => setIsModalOpen(true)}>Book Appointment</span>
       </div>
 

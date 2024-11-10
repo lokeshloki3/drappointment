@@ -15,30 +15,34 @@ const About = () => {
           src={assets.about_image}
           alt=""
         />
-        <div className="flex flex-col justify-center gap-6 md:w-2/4 text-sm text-gray-600">
+        <div className="flex flex-col justify-center gap-3 md:w-2/4 text-sm text-gray-600">
           <p>
-            Welcome to CortiHear Clinic, your trusted partner in managing your
-            healthcare needs conveniently and efficiently. At CortiHear Clinic, we
-            understand the challenges individuals face when it comes to
-            scheduling doctor appointments and managing their health records.
+            Ms. Sonam Sharma, an accomplished Audiologist and Speech-Language Pathologist, 
+            is the founder and CEO of Cortihear Speech and Hearing Clinic, a premier facility 
+            dedicated to innovative and inclusive care in speech and audiology services. 
+            Her career is defined by a commitment to bridging the gap in accessible, high-quality 
+            care for individuals across India who face challenges with hearing, speech, and language. 
+            With a compassionate and client-focused approach, she has guided Cortihear to become a 
+            trusted destination for comprehensive therapeutic services tailored to each client’s needs.
           </p>
           <p>
-            At CortiHear Clinic, we specialize in providing comprehensive services 
-            in speech and hearing, language development, and swallowing disorders. 
-            Our dedicated team of experienced professionals is committed to enhancing 
-            the quality of life for individuals of all ages through personalized assessments 
-            and tailored therapy programs. We believe that effective communication is 
-            essential for connection and understanding, and we strive to empower our 
-            clients with the tools they need to thrive.
+            The clinic operates with a dedication to neurodiversity, valuing and respecting the 
+            unique ways in which neurodivergent children and adults experience the world. 
+            Under her leadership, Cortihear upholds principles of inclusivity and empowerment, 
+            ensuring that clients have an active voice in their therapy journey. Services span 
+            a wide spectrum, from speech therapy and auditory rehabilitation to advanced language 
+            and communication support, all grounded in evidence-based practices that prioritize 
+            long-term progress and emotional well-being.
           </p>
-          <b className="text-gray-800">Our Vision</b>
+          <b className="text-gray-800">Vision</b>
           <p>
-            Our aim at CortiHear Clinic is to deliver exceptional care and support to our 
-            clients, fostering their communication skills and overall well-being. We focus 
-            on individualized treatment plans that address the unique needs of each person, 
-            ensuring that they achieve their fullest potential. With a compassionate approach 
-            and evidence-based practices, we are here to guide you on your journey to improved 
-            speech, hearing, and swallowing health.
+            Her vision is supported by a multidisciplinary team of skilled professionals who share 
+            a commitment to excellence and ethics. With a collaborative approach, the team fosters 
+            a warm, supportive environment where clients and their families feel valued and understood. 
+            As a leader, she emphasizes teamwork, rigorous standards, and continuous professional growth 
+            to keep Cortihear at the forefront of audiology and speech therapy. Her work has helped 
+            countless families discover new ways to connect, communicate, and thrive, making a lasting 
+            impact on communities across India.
           </p>
         </div>
       </div>

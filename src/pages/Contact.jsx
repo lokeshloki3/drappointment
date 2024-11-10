@@ -24,12 +24,12 @@ const Contact = () => {
             Kushwah Market, Gwalior - 474020
           </p>
           <p className="text-gray-500">
-            Tel: <a href="tel:+919999999999" className="text-blue-600 hover:text-blue-500 hover:underline">+91 99999 99999</a><br />
+            Tel: <a href="tel:+918103712273" className="text-blue-600 hover:text-blue-500 hover:underline">+91 81037 12273</a><br />
             Email: <a href="mailto:cortihear@gmail.com" className="text-blue-600 hover:text-blue-500 hover:underline">cortihear@gmail.com</a>
           </p>
 
           <div className="flex justify-center">
-            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-500 transition duration-200">
+            <a href="https://wa.me/918103712273" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-500 transition duration-200">
               <FaWhatsapp className="text-xl mr-2" />
               <span className="font-semibold">WhatsApp Us</span>
             </a>

@@ -6,6 +6,7 @@ const AppointmentModal = ({ isOpen, onClose }) => {
     Age: '',
     Gender: '',
     Problem: '',
+    City:'',
     Mobile: '',
     Email: '',
   });
@@ -62,6 +63,7 @@ const AppointmentModal = ({ isOpen, onClose }) => {
       Age: '',
       Gender: '',
       Problem: '',
+      City: '',
       Mobile: '',
       Email: '',
     });
@@ -71,10 +73,10 @@ const AppointmentModal = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="bg-white rounded-xl shadow-lg p-6 max-w-md w-full">
-        <h2 className="text-2xl font-bold mb-4 text-center text-gray-800">Book Appointment</h2>
+      <div className="bg-white rounded-xl shadow-lg pb-3 pt-3 pr-6 pl-6 max-w-md w-full">
+        <h2 className="text-2xl font-bold mb-2 text-center text-gray-800">Book Appointment</h2>
         <form onSubmit={handleSubmit}>
-          <div className="mb-4">
+          <div className="mb-2">
             <label className="block mb-2 text-gray-600">Name</label>
             <input
               type="text"
@@ -85,7 +87,7 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               className="border border-gray-300 p-2 w-full rounded"
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-2">
             <label className="block mb-2 text-gray-600">Age</label>
             <input
               type="number"
@@ -96,7 +98,7 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               className="border border-gray-300 p-2 w-full rounded"
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-2">
             <label className="block mb-2 text-gray-600">Gender</label>
             <select
               name="Gender"
@@ -111,8 +113,8 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               <option value="Other">Other</option>
             </select>
           </div>
-          <div className="mb-4">
-            <label className="block mb-2 text-gray-600">Problem</label>
+          <div className="mb-2">
+            <label className="block mb-2 text-gray-600">Areas of Concern</label>
             <select
               name="Problem"
               value={formData.Problem}
@@ -120,13 +122,26 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               required
               className="border border-gray-300 p-2 w-full rounded"
             >
-              <option value="">Select Problem</option>
+              <option value="">Select Concern</option>
               <option value="Hearing">Hearing</option>
               <option value="Speech">Speech</option>
+              <option value="Speech">Both Hearing & Speech</option>
+              <option value="Speech">Others</option>
               {/* Add more problems as needed */}
             </select>
           </div>
-          <div className="mb-4">
+          <div className="mb-2">
+            <label className="block mb-2 text-gray-600">City</label>
+            <input
+              type="text"
+              name="City"
+              value={formData.City}
+              onChange={handleChange}
+              required
+              className="border border-gray-300 p-2 w-full rounded"
+            />
+          </div>
+          <div className="mb-2">
             <label className="block mb-2 text-gray-600">Mobile Number</label>
             <input
               type="tel"
@@ -138,7 +153,7 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               className="border border-gray-300 p-2 w-full rounded"
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-2">
             <label className="block mb-2 text-gray-600">Email Address</label>
             <input
               type="email"
