@@ -11,9 +11,7 @@ const Footer = () => {
               Feel free to contact
             </p>
             <div className="flex space-x-4 mt-3">
-              <a href="https://www.instagram.com/cortihear/" target="_blank" rel="noopener noreferrer">
-                <FaInstagram className="text-gray-600 hover:text-gray-800 text-lg md:text-2xl" />
-              </a>
+              <FaInstagram className="text-gray-600 hover:text-gray-800 text-lg md:text-2xl" />
               <FaTwitter className="text-gray-600 hover:text-gray-800 text-lg md:text-2xl" />
               <FaLinkedin className="text-gray-600 hover:text-gray-800 text-lg md:text-2xl" />
             </div>
