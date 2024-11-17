@@ -54,7 +54,6 @@ const Navbar = ({ setIsModalOpen }) => {
         </span>
       </div>
 
-
       {/* Mobile Menu Toggle Button */}
       <div className="flex items-center gap-4">
         <img

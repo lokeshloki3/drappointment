@@ -12,7 +12,7 @@ import expe3 from "./expe3.jpg";
 import expe4 from "./expe4.jpg";
 import backgroundImage from "./background.jpg";
 import book from "./book.png";
-import whycorti from "./whycorti.png";
+import whycorti from "./whyxyz.png";
 
 import SpeechandLanguageTherapy from "./SpeechandLanguageTherapy.png";
 import VoiceTherapy from "./VoiceTherapy.png";
