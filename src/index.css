@@ -21,3 +21,71 @@
   }
 }
 
+
+/* Keyframes for horizontal tilting effect */
+@keyframes horizontalTilt {
+  0% {
+    transform: rotateY(-10deg);  /* Tilt slightly to the left */
+  }
+  50% {
+    transform: rotateY(10deg);   /* Tilt slightly to the right */
+  }
+  100% {
+    transform: rotateY(-10deg);  /* Tilt back to the left */
+  }
+}
+
+/* Class to apply the horizontal tilting animation */
+.animate-horizontal-tilt {
+  animation: horizontalTilt 3s ease-in-out infinite; /* Adjust timing and easing as needed */
+}
+
+@keyframes leftRight {
+  0% {
+    transform: translateX(-1%);
+  }
+  50% {
+    transform: translateX(1%);
+  }
+  100% {
+    transform: translateX(-1%);
+  }
+}
+
+.animate-left-right {
+  animation: leftRight 5s ease-in-out infinite;
+}
+
+/* Keyframes for left-right animation
+@keyframes leftRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-left-right {
+  animation: leftRight 5s ease-in-out infinite;
+}
+
+Keyframes for tilting effect
+@keyframes tilt {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg); 
+  }
+}
+
+.animate-tilt {
+  animation: tilt 3s ease-in-out infinite;
+} */
