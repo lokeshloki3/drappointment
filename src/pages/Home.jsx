@@ -19,6 +19,7 @@ const Home = ({ setIsModalOpen }) => {
       <Header setIsModalOpen={setIsModalOpen}/>
       <SpecialityMenu />
 
+      {/* Button to open the appointment modal */}
       <ActionButton 
         onClick={() => setIsModalOpen(true)} 
         label="Click to book your online appointment" 
