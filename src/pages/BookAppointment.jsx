@@ -5,22 +5,26 @@ import { assets } from "../assets/assets"; // Adjust this if you have an image t
 const BookAppointment = () => {
   return (
     <div>
-      <div className="text-center mt-20 text-2xl pt-10 text-gray-500">
+      {/* Title Section */}
+      <div className="text-center text-2xl md:text-3xl pt-10 text-gray-500 mt-16">
         <p>
           BOOK <span className="text-gray-700 font-semibold">AN APPOINTMENT</span>
         </p>
       </div>
 
-      <div className="my-10 flex flex-col justify-center items-center md:flex-row gap-10 mb-28">
-        {/* Uncomment and use if you have an image to display */}
+      {/* Main Content */}
+      <div className="my-10 flex flex-col justify-center md:flex-row gap-10 mb-28 text-sm md:text-base">
+        {/* Appointment Image - Uncomment if you have an image */}
         {/* <img
-          className="w-full md:max-w-[360px]"
+          className="w-full max-w-[360px]"
           src={assets.appointment_image}
-          alt=""
+          alt="Appointment"
         /> */}
-        
-        <div className="flex flex-col justify-center items-start gap-6 text-sm text-gray-600">
-          <p className="font-semibold text-lg text-gray-600">CONTACT US</p>
+
+        {/* Contact Information */}
+        <div className="flex flex-col justify-center items-start gap-6">
+          {/* Contact Section */}
+          <p className="font-semibold text-lg md:text-xl text-gray-600">CONTACT US</p>
           
           <div className="mb-4">
             <p className="text-gray-700">
@@ -32,7 +36,7 @@ const BookAppointment = () => {
           <div className="mb-4">
             <p className="text-gray-700">
               <strong>Phone:</strong> 
-              <a href="tel:+918103712273" className="text-blue-600 hover:text-blue-500 hover:underline ml-1">+91 99999 99999</a>
+              <a href="tel:+918103712273" className="text-blue-600 hover:text-blue-500 hover:underline ml-1">+91 81037 12273</a>
             </p>
           </div>
 
@@ -43,13 +47,25 @@ const BookAppointment = () => {
             </p>
           </div>
 
-          {/* New line added here */}
-          <div className="mb-4">
-            <p className="text-gray-700">
-              <strong>Click on 'Book Appointment' above to schedule your appointment.</strong>
+          {/* Working Hours Section */}
+          <div className="mb-2">
+            <p className="text-gray-700 flex justify-evenly">
+              <strong>Working Hours:</strong>
+              <div>
+                <span className='ml-3'>Monday to Saturday: 6 AM - 10 PM IST</span><br />
+                <span className='ml-3'>Sunday: Closed</span>
+              </div>
             </p>
           </div>
 
+          {/* Appointment Scheduling Instruction */}
+          <div className="mb-4">
+            <p className="text-gray-700">
+              <strong>Click on 'Book Appointment' above to schedule your online appointment.</strong>
+            </p>
+          </div>
+
+          {/* WhatsApp Link */}
           <div className="flex justify-center">
             <a href="https://wa.me/918103712273" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-500 transition duration-200">
               <FaWhatsapp className="text-xl mr-2" />
