@@ -34,36 +34,36 @@ const reviews = [
     image: "https://avatars.githubusercontent.com/u/93366359?v=4",
     text: "I can’t thank the team at CortiHear Clinic enough for helping me with my hearing aid. From the moment I walked in, they made the whole process so easy and stress-free. The staff really took the time to understand my needs and helped me choose the perfect hearing aid for my lifestyle. The adjustment period was quick, and I was amazed at how much better I could hear in everyday situations. I’m finally able to enjoy conversations, watch TV without cranking up the volume, and hear things I’ve been missing for years. I’m so grateful for the care and support I’ve received at CortiHear—it's truly made a huge difference in my life.",
   },
-  {
-    id: 6,
-    name: "Rohan Desai",
-    image: "https://aeccc.targettechnology.in/static/media/PranayGupta.f3c530b7630ba8efb2ab.jpg",
-    text: "Cortihear has been amazing for my little ones cochlear implant services. Sonam mam turned the auditory verbal therapy sessions into a fun adventure! He was struggling with speech, but now he is confident and chatting away. It is a joy to see!",
-  },
-  {
-    id: 7,
-    name: "Kiran Joshi",
-    image: "https://aeccc.targettechnology.in/static/media/AbirPal.574a09ad7cb325853b29.jpg",
-    text: "I was really unsure about getting cochlear implant services, but the team at Cortihear, especially Sonam mam, made it all feel comfortable. Their auditory verbal therapy has helped me hear my favorite songs again. Best decision ever!",
-  },
-  {
-    id: 8,
-    name: "Pooja Nair",
-    image: "https://aeccc.targettechnology.in/static/media/SoumyaBanerjee.2e2521d6029842435080.jpg",
-    text: "After years of feeling frustrated with my speech, I found the team at Cortihear, and Sonam mam really understood me. The auditory verbal therapy has helped me find my voice again, and I cannot believe how far I have come thanks to their support!",
-  },
-  {
-    id: 9,
-    name: "Siddharth Mehta",
-    image: "https://aeccc.targettechnology.in/static/media/SaikatMukherjee.033310703edff52d0532.jpg",
-    text: "Cortihear has been such a blessing for my son! Sonam mam and the team made the auditory verbal therapy sessions so engaging and fun. Now he is making friends and talking like a champ. I could not be happier!",
-  },
-  {
-    id: 10,
-    name: "Devika Chatterjee",
-    image: "https://avatars.githubusercontent.com/u/93366359?v=4",
-    text: "I have struggled with hearing problems my whole life, but Sonam mam and the team at Cortihear made everything easier. Their auditory verbal therapy helped me find the right hearing aids. Now I can enjoy conversations again, and it feels great!",
-  },
+  // {
+  //   id: 6,
+  //   name: "Rohan Desai",
+  //   image: "https://aeccc.targettechnology.in/static/media/PranayGupta.f3c530b7630ba8efb2ab.jpg",
+  //   text: "Cortihear has been amazing for my little ones cochlear implant services. Sonam mam turned the auditory verbal therapy sessions into a fun adventure! He was struggling with speech, but now he is confident and chatting away. It is a joy to see!",
+  // },
+  // {
+  //   id: 7,
+  //   name: "Kiran Joshi",
+  //   image: "https://aeccc.targettechnology.in/static/media/AbirPal.574a09ad7cb325853b29.jpg",
+  //   text: "I was really unsure about getting cochlear implant services, but the team at Cortihear, especially Sonam mam, made it all feel comfortable. Their auditory verbal therapy has helped me hear my favorite songs again. Best decision ever!",
+  // },
+  // {
+  //   id: 8,
+  //   name: "Pooja Nair",
+  //   image: "https://aeccc.targettechnology.in/static/media/SoumyaBanerjee.2e2521d6029842435080.jpg",
+  //   text: "After years of feeling frustrated with my speech, I found the team at Cortihear, and Sonam mam really understood me. The auditory verbal therapy has helped me find my voice again, and I cannot believe how far I have come thanks to their support!",
+  // },
+  // {
+  //   id: 9,
+  //   name: "Siddharth Mehta",
+  //   image: "https://aeccc.targettechnology.in/static/media/SaikatMukherjee.033310703edff52d0532.jpg",
+  //   text: "Cortihear has been such a blessing for my son! Sonam mam and the team made the auditory verbal therapy sessions so engaging and fun. Now he is making friends and talking like a champ. I could not be happier!",
+  // },
+  // {
+  //   id: 10,
+  //   name: "Devika Chatterjee",
+  //   image: "https://avatars.githubusercontent.com/u/93366359?v=4",
+  //   text: "I have struggled with hearing problems my whole life, but Sonam mam and the team at Cortihear made everything easier. Their auditory verbal therapy helped me find the right hearing aids. Now I can enjoy conversations again, and it feels great!",
+  // },
 ];
 
 export default reviews;
