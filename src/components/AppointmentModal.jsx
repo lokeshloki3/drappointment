@@ -1,3 +1,4 @@
+// AppointmentModal.js
 import React, { useState } from 'react';
 
 const AppointmentModal = ({ isOpen, onClose }) => {
@@ -6,7 +7,7 @@ const AppointmentModal = ({ isOpen, onClose }) => {
     Age: '',
     Gender: '',
     Problem: '',
-    City:'',
+    City: '',
     Mobile: '',
     Email: '',
   });
@@ -26,7 +27,7 @@ const AppointmentModal = ({ isOpen, onClose }) => {
     }
 
     // Validate mobile number
-    const mobileRegex = /^[0-9]{10}$/; // Regex to check for exactly 10 digits
+    const mobileRegex = /^[0-9]{10}$/;
     if (!mobileRegex.test(formData.Mobile)) {
       alert("Please enter a valid mobile number (10 digits).");
       return;
@@ -38,7 +39,6 @@ const AppointmentModal = ({ isOpen, onClose }) => {
     });
 
     try {
-      console.log("Form Data:", formData); // Log form data
       const response = await fetch(scriptURL, {
         method: 'POST',
         body: formDatab, // Use FormData to match what doPost expects
@@ -52,7 +52,6 @@ const AppointmentModal = ({ isOpen, onClose }) => {
         alert("There was a problem with your submission.");
       }
     } catch (error) {
-      console.error('Error!', error.message);
       alert("There was an error. Please try again.");
     }
   };
@@ -72,12 +71,13 @@ const AppointmentModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
       <div className="bg-white rounded-xl shadow-lg pb-3 pt-3 pr-6 pl-6 max-w-md w-full">
         <h2 className="text-2xl font-bold mb-2 text-center text-gray-800">Book Appointment</h2>
         <form onSubmit={handleSubmit}>
+          {/* Name Field */}
           <div className="mb-2">
-            <label className="block mb-2 text-gray-600">Name</label>
+            <label className="block text-gray-600">Name</label>
             <input
               type="text"
               name="Name"
@@ -87,8 +87,10 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               className="border border-gray-300 p-2 w-full rounded"
             />
           </div>
+
+          {/* Age Field */}
           <div className="mb-2">
-            <label className="block mb-2 text-gray-600">Age</label>
+            <label className="block text-gray-600">Age</label>
             <input
               type="number"
               name="Age"
@@ -98,8 +100,10 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               className="border border-gray-300 p-2 w-full rounded"
             />
           </div>
+
+          {/* Gender Field */}
           <div className="mb-2">
-            <label className="block mb-2 text-gray-600">Gender</label>
+            <label className="block text-gray-600">Gender</label>
             <select
               name="Gender"
               value={formData.Gender}
@@ -113,8 +117,10 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               <option value="Other">Other</option>
             </select>
           </div>
+
+          {/* Areas of Concern Field */}
           <div className="mb-2">
-            <label className="block mb-2 text-gray-600">Areas of Concern</label>
+            <label className="block text-gray-600">Areas of Concern</label>
             <select
               name="Problem"
               value={formData.Problem}
@@ -125,13 +131,14 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               <option value="">Select Concern</option>
               <option value="Hearing">Hearing</option>
               <option value="Speech">Speech</option>
-              <option value="Speech">Both Hearing & Speech</option>
-              <option value="Speech">Others</option>
-              {/* Add more problems as needed */}
+              <option value="Both Hearing & Speech">Both Hearing & Speech</option>
+              <option value="Others">Others</option>
             </select>
           </div>
+
+          {/* City Field */}
           <div className="mb-2">
-            <label className="block mb-2 text-gray-600">City</label>
+            <label className="block text-gray-600">City</label>
             <input
               type="text"
               name="City"
@@ -141,20 +148,24 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               className="border border-gray-300 p-2 w-full rounded"
             />
           </div>
+
+          {/* Mobile Number Field */}
           <div className="mb-2">
-            <label className="block mb-2 text-gray-600">Mobile Number</label>
+            <label className="block text-gray-600">Mobile Number</label>
             <input
               type="tel"
               name="Mobile"
               value={formData.Mobile}
               onChange={handleChange}
               required
-              inputMode="numeric" // Suggests a numeric keyboard on mobile devices
+              inputMode="numeric"
               className="border border-gray-300 p-2 w-full rounded"
             />
           </div>
+
+          {/* Email Address Field */}
           <div className="mb-2">
-            <label className="block mb-2 text-gray-600">Email Address</label>
+            <label className="block text-gray-600">Email Address</label>
             <input
               type="email"
               name="Email"
@@ -164,10 +175,29 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               className="border border-gray-300 p-2 w-full rounded"
             />
           </div>
-          <div className="flex justify-between">
-            <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-200">Submit</button>
-            <button type="button" onClick={handleReset} className="border border-gray-300 px-4 py-2 rounded hover:bg-gray-200 transition duration-200">Reset</button>
-            <button type="button" onClick={onClose} className="border border-gray-300 px-4 py-2 rounded hover:bg-gray-200 transition duration-200">Cancel</button>
+
+          {/* Form Buttons */}
+          <div className="flex justify-between mt-3">
+            <button
+              type="submit"
+              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-200"
+            >
+              Submit
+            </button>
+            <button
+              type="button"
+              onClick={handleReset}
+              className="border border-gray-300 px-4 py-2 rounded hover:bg-gray-200 transition duration-200"
+            >
+              Reset
+            </button>
+            <button
+              type="button"
+              onClick={onClose}
+              className="border border-gray-300 px-4 py-2 rounded hover:bg-gray-200 transition duration-200"
+            >
+              Cancel
+            </button>
           </div>
         </form>
       </div>

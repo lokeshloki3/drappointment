@@ -14,21 +14,21 @@ const Card = ({ review, isTruncated, setIsTruncated }) => {
             <img 
                 src={review.image} 
                 alt={review.name} 
-                className="w-16 h-16 sm:w-20 sm:h-20 rounded-full mb-2" 
+                className="w-24 h-24 sm:w-28 sm:h-28 rounded-full mb-1"
             />
             
             <div>
-                <p className="text-sm sm:text-lg font-semibold">{review.name}</p>
-                <p className="text-sm sm:text-sm font-semibold">{review.patient}</p>
+                <p className="text-base sm:text-lg font-semibold">{review.name}</p>
+                <p className="text-sm sm:text-base font-semibold">{review.patient}</p>
             </div>
 
-            <p className="text-gray-800 text-xs sm:text-base mt-2 px-1 inline">
+            <p className="text-gray-800 text-sm sm:text-base mt-2 px-1 inline">
                 {isTruncated ? truncateText(review.text, wordLimit) : review.text}
                 <span 
                     onClick={() => setIsTruncated(!isTruncated)} // Toggle truncated text
                     className="text-blue-600 cursor-pointer ml-1"
                 >
-                    {isTruncated ? '...read more' : ' Show less'}
+                    {isTruncated ? '...Read More' : 'Show less'}
                 </span>
             </p>
         </div>
