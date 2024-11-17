@@ -3,14 +3,13 @@ import React from "react";
 const FeatureTable = () => {
   return (
     <div className="container mx-auto my-12 px-4">
-      <h2 className="text-center text-2xl sm:text-3xl mb-6">Why Choose Cortihear?</h2>
+      <h2 className="text-center text-2xl sm:text-3xl mb-6">Why Choose XYZ Clinic?</h2>
       <div className="overflow-x-auto">
         <table className="table-auto w-full text-left border-collapse text-xs md:text-base">
           <thead>
             <tr>
-              {/* Applying width settings opposite of larger screen for small screen */}
               <th className="px-0 py-1 md:px-4 md:py-2 border-b font-semibold">Feature</th>
-              <th className="px-0 py-1 md:px-4 md:py-2 border-b font-semibold">Cortihear Speech and Hearing Clinic</th>
+              <th className="px-0 py-1 md:px-4 md:py-2 border-b font-semibold">XYZ Speech and Hearing Clinic</th>
               <th className="px-0 py-1 md:px-4 md:py-2 border-b font-semibold">Traditional Clinics</th>
             </tr>
           </thead>
@@ -42,7 +41,7 @@ const FeatureTable = () => {
             </tr>
             <tr>
               <td className="px-0 py-1 md:px-4 md:py-2 border-b">Expert-Led, Client-Focused Care</td>
-              <td className="px-0 py-1 md:px-4 md:py-2 border-b">Yes – Led by Sonam Sharma, an experienced Audiologist and Speech Language Pathologist, Cortihear provides expert, client-centered services.</td>
+              <td className="px-0 py-1 md:px-4 md:py-2 border-b">Yes – Led by Lokesh, an experienced Audiologist and Speech Language Pathologist, XYZ Clinic provides expert, client-centered services.</td>
               <td className="px-0 py-1 md:px-4 md:py-2 border-b">Depends on Clinic – Many clinics offer skilled professionals but may lack a client-centered, personalized focus.</td>
             </tr>
             <tr>

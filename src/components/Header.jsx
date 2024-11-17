@@ -33,11 +33,11 @@ const Header = ({ setIsModalOpen }) => {
 
       <div className="md:w-1/2 rounded-lg flex flex-col justify-center items-center">
         <img
-          className="w-[90%] h-auto rounded-lg pt-6 animate-left-right"
+          // className="w-[70%] h-auto rounded-lg pt-6 animate-left-right"
+          className="w-[70%] h-auto rounded-lg pt-6"
           src={assets.header_img}
           alt="Header"
         />
-
 
 
         {/* <p className="text-center text-white mt-4 text-sm md:text-base">
@@ -52,12 +52,11 @@ const Header = ({ setIsModalOpen }) => {
           //   backgroundColor: '#8376A1',
           // }}
         >
-          <p className='text-xl font-semibold'>Sonam Sharma</p>
+          <p className='text-xl font-semibold'>Lokesh</p>
           <p className="text-sm md:text-[15px]">BASLP, AYJNISHD, Noida, Masters in Audiology, AIISH, Mysore</p>
           <p className="text-sm md:text-[15px]">EX-Audiologist AIIMS, Delhi</p>
         </div>
 
-        {/* Experience Section */}
         <div className="flex justify-center gap-4 mb-2 mt-2">
           <img className="w-11 h-11 rounded-full object-cover" src={assets.expe1} alt="expe 1" />
           <img className="w-11 h-11 rounded-full object-cover" src={assets.expe2} alt="expe 2" />

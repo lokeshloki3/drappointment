@@ -12,7 +12,7 @@ const About = () => {
 
       <div className="text-center mt-10">
         <strong className="text-2xl font-semibold text-gray-800 leading-tight">
-          Welcome to <span className="text-primary">Cortihear Speech and Hearing Clinic</span> – 
+          Welcome to <span className="text-primary">XYZ Speech and Hearing Clinic</span> – 
           Where <span className="text-primary">Every Voice is Heard</span> and <span className="text-primary">Every Sound is Cherished</span>
         </strong>
       </div>
@@ -20,33 +20,33 @@ const About = () => {
       <div>
         <div className="my-10 flex flex-col md:flex-row gap-12">
           <img
-            className="w-full md:max-w-[360px] animate-left-right"
+            className="w-full md:max-w-[280px] md:h-auto"
             src={assets.about_image}
-            alt="About Cortihear"
+            alt="About XYZ Clinic"
           />
-          <p className="text-base md:text-lg md:mt-3">
-              Ms. Sonam Sharma, an accomplished Audiologist and Speech-Language Pathologist, 
-              is the founder and CEO of Cortihear Speech and Hearing Clinic, a premier facility 
+          <p className="text-base md:text-lg md:mt-10">
+              Mr. Loki, an accomplished Audiologist and Speech-Language Pathologist, 
+              is the founder and CEO of XYZ Clinic Speech and Hearing Clinic, a premier facility 
               dedicated to innovative and inclusive care in speech and audiology services. 
-              Her career is defined by a commitment to bridging the gap in accessible, high-quality 
+              His career is defined by a commitment to bridging the gap in accessible, high-quality 
               care for individuals across India who face challenges with hearing, speech, and language. 
-              With a compassionate and client-focused approach, she has guided Cortihear to become a 
+              With a compassionate and client-focused approach, she has guided XYZ Clinic to become a 
               trusted destination for comprehensive therapeutic services tailored to each client’s needs.
           </p>
         </div>
         <div className="flex flex-col justify-center gap-3 md:w-3/4 mx-auto text-sm text-gray-600">
           <p className="text-base md:text-lg">
-            Cortihear Speech and Hearing Clinic is here to make exceptional audiology and 
+            XYZ Clinic Speech and Hearing Clinic is here to make exceptional audiology and 
             speech-language services accessible to you—wherever you are. We believe in breaking 
             down barriers to communication and hearing health, bringing expertise right to your 
-            screen. With the guidance of Sonam Sharma, a dedicated Audiologist and Speech Language 
+            screen. With the guidance of Loki, a dedicated Audiologist and Speech Language 
             Pathologist, our clinic is committed to providing convenient, high-quality care for 
             individuals of all ages.
           </p>
           <p className="text-base md:text-lg">
             The clinic operates with a dedication to neurodiversity, valuing and respecting the 
             unique ways in which neurodivergent children and adults experience the world. 
-            Under her leadership, Cortihear upholds principles of inclusivity and empowerment, 
+            Under her leadership, XYZ Clinic upholds principles of inclusivity and empowerment, 
             ensuring that clients have an active voice in their therapy journey. Services span 
             a wide spectrum, from speech therapy and auditory rehabilitation to advanced language 
             and communication support, all grounded in evidence-based practices that prioritize 
@@ -54,10 +54,10 @@ const About = () => {
           </p>
           <b className="text-gray-800 text-base md:text-lg">Our Vision</b>
           <p className="text-base md:text-lg">
-            Our mission at Cortihear is to deliver accessible, personalized care in audiology 
+            Our mission at XYZ Clinic is to deliver accessible, personalized care in audiology 
             and speech therapy that improves lives. Through online and remote services, we empower 
             individuals to connect more deeply with the world around them, from the comfort of their 
-            own spaces. Whether you’re seeking improved hearing, clearer speech, or both, Cortihear 
+            own spaces. Whether you’re seeking improved hearing, clearer speech, or both, XYZ Clinic 
             is ready to help you on your journey.
           </p>
         </div>
@@ -74,14 +74,14 @@ const About = () => {
           <p>
             We specialize in remote audiology and speech therapy, allowing clients to access crucial 
             care without the need for travel. From online hearing tests to remote hearing aid fittings 
-            and virtual speech therapy sessions, Cortihear brings comprehensive services directly to 
+            and virtual speech therapy sessions, XYZ Clinic brings comprehensive services directly to 
             you—making it easier than ever to prioritize your hearing and communication health.
           </p>
         </div>
         <div className="border px-10 md:px-8 py-8 sm:py-8 flex flex-col gap-5 text-[15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600 cursor-pointer">
           <b>Personalized, Family-Centered Approach</b>
           <p>
-            At Cortihear, we understand that hearing and speech challenges impact the whole family. 
+            At XYZ Clinic, we understand that hearing and speech challenges impact the whole family. 
             We take a personalized, family-centered approach that involves creating customized 
             treatment plans to meet your specific needs, ensuring supportive, compassionate care.
           </p>

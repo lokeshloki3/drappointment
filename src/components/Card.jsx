@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = ({ review, isTruncated, setIsTruncated }) => {
     const wordLimit = 40;
-    // Function to truncate text to the first `wordLimit` words
+    // Truncate text to the first `wordLimit` words
     const truncateText = (text, wordLimit) => {
         const words = text.split(' ');
         if (words.length <= wordLimit) return text;
@@ -25,7 +25,7 @@ const Card = ({ review, isTruncated, setIsTruncated }) => {
             <p className="text-gray-800 text-sm sm:text-base mt-2 px-1 inline">
                 {isTruncated ? truncateText(review.text, wordLimit) : review.text}
                 <span 
-                    onClick={() => setIsTruncated(!isTruncated)} // Toggle truncated text
+                    onClick={() => setIsTruncated(!isTruncated)}
                     className="text-blue-600 cursor-pointer ml-1"
                 >
                     {isTruncated ? '...Read More' : 'Show less'}

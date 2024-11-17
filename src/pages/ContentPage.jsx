@@ -8,7 +8,6 @@ const ContentPage = () => {
   const category = categories[categoryId];
   const selectedContent = category?.items.find(item => item.id === parseInt(contentId));
 
-  // Handle content not found
   if (!category || !selectedContent) {
     return <div className="container mx-auto p-6 mt-24">Content not found</div>;
   }
@@ -16,7 +15,6 @@ const ContentPage = () => {
   return (
     <div className="container mx-auto p-6 mt-20">
       
-      {/* Back Button */}
       <div className="flex justify-end mb-4">
         <button
           className="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition"
@@ -26,7 +24,6 @@ const ContentPage = () => {
         </button>
       </div>
 
-      {/* Blog Content */}
       <div className="border border-blue-200 rounded-xl overflow-hidden p-4 md:p-10 mb-8 shadow-md">
         <img className="rounded-lg mb-4" src={selectedContent.image} alt={selectedContent.title} />
 
