@@ -21,7 +21,7 @@ const Testimonials = (props) => {
 
     return (
         <>
-            <h1 className='text-center text-4xl my-2'>Testimonials</h1>
+            <h1 className='text-center text-2xl md:text-3xl'>Testimonials</h1>
             <div className="w-full min-h-screen flex flex-col md:flex-row lg:flex-row items-center justify-center relative bg-antiquewhite overflow-hidden p-4">
                 {/* Left Arrow */}
                 <AiOutlineLeft
