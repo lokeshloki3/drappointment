@@ -10,7 +10,11 @@ import ImageSection from "../components/ImageSection";
 const Home = ({ setIsModalOpen }) => {
   return (
     <div>
-      <h1 className="text-center m-8 text-3xl mt-24 font-medium md:text-5xl">Welcome to XYZ Clinic</h1>
+      <h1 className="text-center mt-16 mb-8 text-3xl md:text-4xl pt-10 text-gray-800">
+        <strong className="font-bold">
+          Welcome to <span className="text-primary">Speech & Hearing Clinic</span>
+        </strong>
+      </h1>      
       {/* Passing down setIsModalOpen */}
       <Header setIsModalOpen={setIsModalOpen}/>
       <SpecialityMenu />

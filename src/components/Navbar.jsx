@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import logo from '../assets/logo.jpg';
+import logo from '../assets/logo.png';
 import { assets } from "../assets/assets";
 import { FaWhatsapp } from 'react-icons/fa';
 
