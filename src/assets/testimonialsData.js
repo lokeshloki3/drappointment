@@ -18,7 +18,7 @@ const reviews = [
     name: "Anjali and Rohit Patel",
     patient: "Parents of Aarav Patel (Cochlear Implant and AVT)",
     image: "https://aeccc.targettechnology.in/static/media/PranayGupta.f3c530b7630ba8efb2ab.jpg",
-    text: "We are incredibly grateful to Loki sir and the team at XYZ Clinic for their exceptional support throughout our child's cochlear implant journey. With her expert guidance in Auditory Verbal Therapy, our child has made remarkable progress in hearing and speech development. The personalized approach, patience, and dedication shown have made a significant difference, helping our child gain confidence in their communication. We are truly thankful for the nurturing environment at XYZ, which has played a key role in our child's growth.",
+    text: "We are incredibly grateful to Loki sir and the team at XYZ Clinic for their exceptional support throughout our child's cochlear implant journey. With his expert guidance in Auditory Verbal Therapy, our child has made remarkable progress in hearing and speech development. The personalized approach, patience, and dedication shown have made a significant difference, helping our child gain confidence in their communication. We are truly thankful for the nurturing environment at XYZ, which has played a key role in our child's growth.",
   },
   {
     id: 4,

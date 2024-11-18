@@ -30,7 +30,7 @@ const About = () => {
               dedicated to innovative and inclusive care in speech and audiology services. 
               His career is defined by a commitment to bridging the gap in accessible, high-quality 
               care for individuals across India who face challenges with hearing, speech, and language. 
-              With a compassionate and client-focused approach, she has guided XYZ Clinic to become a 
+              With a compassionate and client-focused approach, he has guided XYZ Clinic to become a 
               trusted destination for comprehensive therapeutic services tailored to each client’s needs.
           </p>
         </div>
@@ -46,7 +46,7 @@ const About = () => {
           <p className="text-base md:text-lg">
             The clinic operates with a dedication to neurodiversity, valuing and respecting the 
             unique ways in which neurodivergent children and adults experience the world. 
-            Under her leadership, XYZ Clinic upholds principles of inclusivity and empowerment, 
+            Under his leadership, XYZ Clinic upholds principles of inclusivity and empowerment, 
             ensuring that clients have an active voice in their therapy journey. Services span 
             a wide spectrum, from speech therapy and auditory rehabilitation to advanced language 
             and communication support, all grounded in evidence-based practices that prioritize 
