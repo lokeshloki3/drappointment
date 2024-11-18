@@ -34,7 +34,7 @@ const Home = ({ setIsModalOpen }) => {
 
       <ImageSection src={assets.book} alt="Book" />
       
-      <ImageSection src={assets.whycorti} alt="Why Cortihear" />
+      <ImageSection src={assets.whyxyz} alt="Why Cortihear" />
 
       <ActionButton 
         onClick={() => setIsModalOpen(true)} 
