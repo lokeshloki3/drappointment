@@ -9,11 +9,11 @@ const ContentPage = () => {
   const selectedContent = category?.items.find(item => item.id === parseInt(contentId));
 
   if (!category || !selectedContent) {
-    return <div className="container mx-auto p-6 mt-24">Content not found</div>;
+    return <div className="mx-auto p-6 mt-24">Content not found</div>;
   }
 
   return (
-    <div className="container mx-auto p-6 mt-20">
+    <div className="mx-auto p-0 md:p-6 mt-24 md:mt-20">
       
       <div className="flex justify-end mb-4">
         <button
