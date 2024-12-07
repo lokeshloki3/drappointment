@@ -9,7 +9,7 @@ const ContentPage = () => {
   const selectedContent = category?.items.find(item => item.id === parseInt(contentId));
 
   if (!category || !selectedContent) {
-    return <div >Content not found</div>;
+    return <div className="mx-auto p-6 mt-24">Content not found</div>;
   }
 
   return (
