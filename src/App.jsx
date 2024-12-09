@@ -25,7 +25,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home setIsModalOpen={setIsModalOpen} />} />
         {/* <Route path="/drappointment" element={<Navigate to="/" replace />} /> */}
-        <Route path="/drappointment" element={<Home />} />
+        <Route path="/drappointment" element={<Home setIsModalOpen={setIsModalOpen}/>} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/:categoryId" element={<CategoryPage />} />
         <Route path="/blogs/:categoryId/:contentId" element={<ContentPage />} />
