@@ -12,7 +12,7 @@ const Home = ({ setIsModalOpen }) => {
     <div>
       <h1 className="text-center mt-16 mb-8 text-3xl md:text-4xl pt-10 text-gray-800">
         <strong className="font-bold">
-          
+          Welcome to <span className="text-primary">Speech & Hearing Clinic</span>
         </strong>
       </h1>      
       {/* Passing down setIsModalOpen */}
